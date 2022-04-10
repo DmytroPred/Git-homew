@@ -1,9 +1,10 @@
 function calculate(str) {
+    if (typeof str !== 'string' || !str) return '';
     // Variable for containing result
-    let resultString = '';
+    const resultString = '';
 
     const arr = str.split(' ');
-    let [num1, operator, num2] = [arr[0].length, arr[1], arr[2].length];
+    const [num1, operator, num2] = [arr[0].length, arr[1], arr[2].length];
 
     if (operator === '+') {
         return resultString.padStart(num1 + num2, '.');

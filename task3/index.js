@@ -1,4 +1,5 @@
 function isValidParentheses(str) {
+    if (typeof str !== 'string' || !str) return false;
     const stack = [];
 
     for(let i = 0; i < str.length; i++) {
